@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Registration Form</title>
-	</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+  </head>
 
   
-	<body>
+  <body>
       
-	 <label>姓名（必填）</label>
+   <label>姓名（必填）</label>
        <input type="text" name="name" maxlength="10" required><br>
      <label>學院（必填）</label>
        <select name="college_selection" required>
-              <option></option>
+              <option value="" disabled selected>請選擇</option>
               <option>文學院</option>
               <option>理學院</option>
               <option>商學院</option>
@@ -24,18 +24,18 @@
               <option>教育學院</option>
         </select><br>
   
-  	 <label>手機（必填）</label>
+     <label>手機（必填）</label>
        <input type="text" name="cellphone" maxlength="10" pattern="[0-9]" required><br>
 
-  	 <label>E-mail（必填）</label>
+     <label>E-mail（必填）</label>
        <input type="email" name="e_mail" required><br>
 
-  	 <label>生日（非必填）</label>
+     <label>生日（非必填）</label>
        西元<input name="yyyy" pattern="[0-9]" maxlength="4" size="8">年
           <input name="mm" pattern="[0-9]" maxlength="2" size="4">月
           <input name="dd" pattern="[0-9]" maxlength="2" size="4">日<br>
 
        <input type="submit" value="線上報名">
 
-	</body>
+  </body>
 </html>
